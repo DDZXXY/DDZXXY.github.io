@@ -136,9 +136,23 @@ img {
   padding: 74px 0 80px;
   color: #f9fbfd;
   background:
-    linear-gradient(135deg, rgba(16, 47, 88, 0.95), rgba(28, 143, 138, 0.82)),
-    radial-gradient(circle at 78% 18%, rgba(242, 201, 76, 0.42), transparent 28%),
+    linear-gradient(90deg, rgba(8, 22, 42, 0.94) 0%, rgba(9, 34, 60, 0.84) 38%, rgba(7, 67, 72, 0.58) 100%),
+    radial-gradient(circle at 78% 18%, rgba(242, 201, 76, 0.34), transparent 24%),
+    url("hero-semiconductor.jpg") center / cover no-repeat,
     #102f58;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(3, 10, 20, 0.08), rgba(3, 10, 20, 0.24)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.045) 0 1px, transparent 1px 120px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 120px);
+  mix-blend-mode: screen;
+  opacity: 0.46;
+  pointer-events: none;
 }
 
 .hero-pattern {
@@ -320,10 +334,11 @@ h3 {
 .profile-figure {
   margin: 0;
   padding: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(7, 24, 43, 0.46);
+  border: 1px solid rgba(201, 244, 255, 0.34);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
 }
 
 .profile-figure img {
