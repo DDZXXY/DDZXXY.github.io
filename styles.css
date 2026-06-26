@@ -131,8 +131,9 @@ img {
 .section-band:not(.hero):not(.contact-section) {
   color: #eef7fb;
   background:
-    linear-gradient(135deg, rgba(5, 13, 25, 0.92), rgba(8, 35, 48, 0.9)),
-    url("hero-semiconductor.jpg") center / cover fixed no-repeat,
+    radial-gradient(circle at 18% 14%, rgba(73, 213, 205, 0.14), transparent 24%),
+    radial-gradient(circle at 88% 32%, rgba(242, 201, 76, 0.1), transparent 22%),
+    linear-gradient(135deg, #081321 0%, #0a1b2d 46%, #082d35 100%),
     #081321;
 }
 
@@ -141,8 +142,8 @@ img {
   inset: 0;
   content: "";
   background:
-    radial-gradient(circle at 16% 18%, rgba(85, 215, 224, 0.16), transparent 22%),
-    radial-gradient(circle at 84% 28%, rgba(242, 201, 76, 0.13), transparent 20%),
+    radial-gradient(circle at 16% 18%, rgba(85, 215, 224, 0.1), transparent 22%),
+    radial-gradient(circle at 84% 28%, rgba(242, 201, 76, 0.08), transparent 20%),
     linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
     linear-gradient(0deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
   background-size: auto, auto, 92px 92px, 92px 92px;
@@ -171,8 +172,9 @@ img {
 
 .section-band.muted {
   background:
-    linear-gradient(135deg, rgba(5, 16, 30, 0.94), rgba(12, 54, 58, 0.88)),
-    url("hero-semiconductor.jpg") center / cover fixed no-repeat,
+    radial-gradient(circle at 74% 22%, rgba(73, 213, 205, 0.12), transparent 25%),
+    radial-gradient(circle at 18% 72%, rgba(192, 90, 72, 0.1), transparent 24%),
+    linear-gradient(135deg, #07101d 0%, #0a2232 52%, #0a3133 100%),
     #081321;
 }
 
@@ -205,6 +207,17 @@ img {
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 120px);
   mix-blend-mode: screen;
   opacity: 0.46;
+  pointer-events: none;
+}
+
+.hero::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 220px;
+  content: "";
+  background: linear-gradient(180deg, rgba(8, 19, 33, 0) 0%, rgba(8, 19, 33, 0.72) 58%, #081321 100%);
   pointer-events: none;
 }
 
@@ -681,11 +694,6 @@ h3 {
 
   .hero {
     padding: 54px 0 64px;
-  }
-
-  .section-band:not(.hero):not(.contact-section),
-  .section-band.muted {
-    background-attachment: scroll;
   }
 
   h1 {
