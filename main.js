@@ -103,7 +103,7 @@ const content = {
       {
         title: "University of Michigan, Ann Arbor",
         subtitle: "B.S. Electrical Engineering",
-        meta: "Aug 2025 - May 2027 | GPA 4.0/4.0",
+        meta: "Aug 2025 - May 2027 | GPA 3.963/4.0",
         body: "Honors: College of Engineering Dean's Honor List."
       },
       {
@@ -232,7 +232,7 @@ const content = {
       {
         title: "密西根大学安娜堡分校",
         subtitle: "电气工程学士",
-        meta: "2025 年 8 月 - 2027 年 5 月 | GPA 4.0/4.0",
+        meta: "2025 年 8 月 - 2027 年 5 月 | GPA 3.963/4.0",
         body: "荣誉：工程学院院长荣誉名单。"
       },
       {
