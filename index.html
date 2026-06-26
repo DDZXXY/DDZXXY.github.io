@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Zheng He, electrical engineering student and researcher focused on microelectronics, MicroLED manufacturing, spintronic devices, and high-temperature piezoelectric materials."
+    >
+    <title>Zheng He | Electrical Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Zheng He home">
+        <span class="brand-mark">ZH</span>
+        <span data-i18n="brand">Zheng He</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <button class="language-toggle" type="button" aria-label="Switch language" aria-pressed="false">
+        <span data-lang-label>中文</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-pattern" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">Electrical Engineering at the University of Michigan</p>
+            <h1 data-i18n="heroName">Zheng He</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
+              Undergraduate researcher working across microfluidic assembly, MicroLED manufacturing, spintronic memory devices, and high-temperature piezoelectric materials.
+            </p>
+
+            <div class="hero-actions" aria-label="Contact links">
+              <a class="button primary" href="mailto:ethanhe@umich.edu" data-i18n="emailButton">Email</a>
+              <a class="button secondary" href="https://www.linkedin.com/in/zhenghe413" target="_blank" rel="noreferrer" data-i18n="linkedinButton">LinkedIn</a>
+            </div>
+
+            <dl class="quick-facts" aria-label="Profile facts">
+              <div>
+                <dt data-i18n="factLocationLabel">Location</dt>
+                <dd data-i18n="factLocation">Ann Arbor, Michigan</dd>
+              </div>
+              <div>
+                <dt data-i18n="factFocusLabel">Focus</dt>
+                <dd data-i18n="factFocus">Microelectronics Research</dd>
+              </div>
+              <div>
+                <dt data-i18n="factEducationLabel">Degree</dt>
+                <dd data-i18n="factEducation">B.S. Electrical Engineering</dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="profile-figure">
+            <img src="assets/avatar.jpg" alt="Portrait of Zheng He">
+            <figcaption>
+              <span data-i18n="profileCaptionTitle">Zheng He / 赫峥</span>
+              <small data-i18n="profileCaptionBody">Electrical Engineering student and researcher</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band intro-section" aria-labelledby="about-title">
+        <div class="container intro-grid">
+          <div>
+            <p class="section-kicker" data-i18n="aboutKicker">About</p>
+            <h2 id="about-title" data-i18n="aboutTitle">Engineering research for next-generation electronic systems.</h2>
+          </div>
+          <p data-i18n="aboutBody">
+            I am an electrical engineering student at the University of Michigan with research experience spanning scalable MicroLED manufacturing, domain-wall spintronic devices, and high-temperature piezoelectric materials. I enjoy turning complex physical systems into testable models, experiments, and working prototypes.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-band" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="experienceKicker">Experience</p>
+            <h2 id="experience-title" data-i18n="experienceTitle">Research and Teaching</h2>
+          </div>
+
+          <div class="timeline" data-render-list="experience"></div>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="educationKicker">Education</p>
+            <h2 id="education-title" data-i18n="educationTitle">Academic Background</h2>
+          </div>
+
+          <div class="card-grid two-column" data-render-list="education"></div>
+        </div>
+      </section>
+
+      <section class="section-band" id="leadership" aria-labelledby="leadership-title">
+        <div class="container split-section">
+          <div>
+            <p class="section-kicker" data-i18n="leadershipKicker">Leadership</p>
+            <h2 id="leadership-title" data-i18n="leadershipTitle">Campus Leadership</h2>
+          </div>
+          <div class="stacked-list" data-render-list="leadership"></div>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="skills" aria-labelledby="skills-title">
+        <div class="container skills-grid">
+          <div>
+            <p class="section-kicker" data-i18n="skillsKicker">Skills</p>
+            <h2 id="skills-title" data-i18n="skillsTitle">Technical Toolkit</h2>
+          </div>
+          <div>
+            <div class="skill-group">
+              <h3 data-i18n="technicalSkillsTitle">Technical Skills</h3>
+              <div class="tag-list" data-render-tags="technicalSkills"></div>
+            </div>
+            <div class="skill-group">
+              <h3 data-i18n="languageSkillsTitle">Languages</h3>
+              <div class="tag-list" data-render-tags="languageSkills"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-kicker" data-i18n="contactKicker">Contact</p>
+            <h2 id="contact-title" data-i18n="contactTitle">Open to research conversations and collaboration.</h2>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:ethanhe@umich.edu">ethanhe@umich.edu</a>
+            <a href="https://www.linkedin.com/in/zhenghe413" target="_blank" rel="noreferrer">linkedin.com/in/zhenghe413</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span data-i18n="footerName">Zheng He</span>
+        <span data-i18n="footerNote">Electrical Engineering | University of Michigan</span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
